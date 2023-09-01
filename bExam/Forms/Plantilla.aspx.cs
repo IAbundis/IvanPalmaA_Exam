@@ -80,7 +80,7 @@ namespace bExam.Forms
                 cmd.Parameters.Add("@Descripcion", SqlDbType.VarChar).Value = txtDescription.Text;
                 cmd.ExecuteNonQuery();
                 con.Close();
-                //Response.Redirect("Index.aspx");
+                Response.Redirect("Index.aspx");
             }
             catch(Exception ex)
             {
